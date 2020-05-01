@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>
+
+    <style>
+        #usern{
+            color:blue;
+        }
+
+        #passw{
+            color:red;
+        }
+
+        .colormixing {
+           background-color: blueviolet;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+<form
+        action="http://example.com/join.php"
+        method="post">
+
+    <p>Username:
+        <input type="text" name="username" id="usern" size="15" maxlength="30"/>
+    </p>
+
+    <p
+    >Password:
+        <input type="password" name="password" id="passw" size="15" maxlength="30"/>
+    </p>
+
+    <textarea name="comment" id="comment" cols="15" rows="4">Comments?</textarea>
+
+    <p>Favorite Food</p>
+
+    <input type="radio" name="Fave Food"  value="Pasta" /> Pasta
+    <input type="radio" name="Fave Food"  value="Salad" /> Salad
+    <input type="radio" name="Fave Food"  value="Other" /> Other
+
+
+   <p>Favorite Drink</p>
+
+    <input type="checkbox" name="Fave Drink"  value="Water" /> Water
+    <input type="checkbox" name="Fave Drink"  value="Tea" /> Tea
+    <input type="checkbox" name="Fave Drink"  value="Soda" /> Soda
+    <input type="checkbox" name="Fave Drink"  value="Other" /> Other
+
+
+    <p>Favorite Color</p>
+    <select name="Fave Color" class="colormixing">
+
+        <option value="Pink">Pink</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+
+    </select>
+
+    <p>Upload your favorite pic</p>
+    <input type="file" name="photo"/>
+    <input type="submit" value="Submit">
+
+
+</form>
+</body>
+
+</html>
